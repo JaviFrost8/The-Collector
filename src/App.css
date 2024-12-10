@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(109, 207, 240);
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(1, 109, 145);
+    color: white;
+    padding: 30px;
+}
+
+.header-container .logo{
+    font-size: 23px;
+}
+
+.ul-container ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.ul-container ul li{
+    font-size: 22px;
+    margin: 0 20px;
+}
+
+.header-container a{
+    text-decoration: none;
+    color: white
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 300px;
+}
+
+.title-intro{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.container-p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold;
+    color: rgb(1, 109, 145)
+}
+
+.p{
+    font-size: 23px;
+    margin: 7px 0;
+}
+
+.container-peliculas{
+    margin-top: 40px;
+}
+
+.big-search-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.search-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    margin-top: 50px;
+}
+
+.title{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: 40px;
+}
+
+.form{
+    margin-top: 30px;
+}
+
+input[type='text']{
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+}
+
+input[type='text']:focus{
+    outline: none;
+}
+
+input[type='text']::placeholder{
+    color: rgb(182, 181, 181);
+}
+
+input[type='submit']{
+    margin-left: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    background-color:rgb(1, 109, 145);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 15px;
+}
+
+.films-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 70px 0;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 90%;
+}
+
+.movie-container{
+    position: relative;
+    border: 2px solid white;
+    background-color:rgb(1, 70, 94);
+    box-shadow: 1px 2px 4px black;
+    cursor: pointer;
+}
+
+.movie-container .info{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 7px;
+    color: white;
+    font-size: 20px;
+}
+
+.movie-container a{
+    text-decoration: none;
+}
+
+.movie-title{
+    max-width: 240px;
+}
+
+.vote{
+    background-color: gray;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+.add{
+    position: absolute;
+    font-size: 23px;
+    padding: 7px;
+    cursor: pointer;
+    top: 5px;
+    right: 5px;
+    border-radius: 50%;
+    border: none;
+    opacity: 0.3;
+    transition: all 300ms;
+}
+
+.add:hover{
+    opacity: 10;
+}
+
+.deleteItem{
+    position: absolute;
+    font-size: 23px;
+    padding: 7px;
+    cursor: pointer;
+    top: 5px;
+    right: 5px;
+    border-radius: 50%;
+    border: none;
+    opacity: 0.3;
+    transition: all 300ms;
+}
+
+.deleteItem:hover{
+    opacity: 10;
+    background-color: red;
+    color: white;
+}
+
+.myfilms-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.count{
+    margin-top: 25px;
+    font-size: 24px;
+    color: whitesmoke;
+    text-shadow: 1px 2px 2px black;
+}
+
+.noMovies{
+    margin-top: 30px;
+}
+
+.info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.movieInfo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    margin-top: 100px;
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.title-description{
+    color: rgb(29, 116, 29);
+    font-weight: bold;
+}
+
+.movieInfo-container .info-poster{
+    padding-right: 20px;
+}
+
+.movieInfo-container p{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.loading{
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+.btn{
+    background-color:rgb(1, 109, 145);
+    color: white;
+    padding: 7px 15px;
+    font-size: 23px;
+    border-radius: 3px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
