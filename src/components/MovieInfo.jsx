@@ -33,8 +33,6 @@ const MovieInfo = () => {
 
   }, [id])
 
-  console.log(movie)
-
   return (
     <Principal>
       {isLoading ? (
@@ -48,7 +46,7 @@ const MovieInfo = () => {
             <div className='info-container'>
               <p><strong>Título de la película: <span className='title-description'>{movie.title}</span></strong></p>
               <p><strong>Nota por la crítica: </strong>{movie.vote_average.toFixed(1)}</p>
-              <p><strong>Genero: </strong>{movie.genres[0].name}{movie.genres[1] ? ',' : ''} {movie.genres[1]?.name}</p>
+              <p><strong>Genero: </strong>{movie.genres[0].name}{movie.genres[1] ? ',' : ''} {movie.genres[1]?.name}{movie.genres[2] ? ',' : ''} {movie.genres[2]?.name}</p>
               <p><strong>Sinopsis: </strong>{movie.overview}</p>
               <p><strong>Eslogán: </strong>{movie.tagline}</p>
             </div>
